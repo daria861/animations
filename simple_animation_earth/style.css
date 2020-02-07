@@ -1,0 +1,24 @@
+body{
+    background: #000;
+}
+ 
+.main-box{
+    margin: 150px auto;
+    width: 900px;
+    height: 900px;
+    perspective: 700px;
+}
+
+.spin-box{
+    animation: spin 35s linear infinite;
+    background: url('img/unnamed.jpg') no-repeat;
+    background-size: contain;
+    border-radius: 800px;
+    width: 800px;
+    height: 800px;
+}
+
+@keyframes spin{
+    0% { transform: rotateY(360deg);}
+    100% {transform: rotateY(0deg);}
+}
